@@ -1,0 +1,7 @@
+\begin{figure}
+\subfloat[The desktop set up in one room\label{fig:setup_d}]
+  {\includegraphics[width=.45\linewidth]{study1/setup_d.JPG}}\hfill
+\subfloat[The hardware for the installation set up in the other room \label{fig:setup_1}]
+  {\includegraphics[width=.45\linewidth]{study1/setup_1.JPG}}\hfill
+\caption{The general setup of the pre-study}
+\end{figure}

@@ -1,0 +1,45 @@
+\BOOKMARK [0][]{chapter.1}{1 Introduction}{}% 1
+\BOOKMARK [0][]{chapter.2}{2 Related Work and Foundation}{}% 2
+\BOOKMARK [1][-]{section.2.1}{2.1 Interactive Maps}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Visualization Techniques}{section.2.1}% 4
+\BOOKMARK [1][-]{section.2.2}{2.2 Time series visualization}{chapter.2}% 5
+\BOOKMARK [0][]{chapter.3}{3 Background of This Project}{}% 6
+\BOOKMARK [1][-]{section.3.1}{3.1 Concept}{chapter.3}% 7
+\BOOKMARK [1][-]{section.3.2}{3.2 Tools}{chapter.3}% 8
+\BOOKMARK [1][-]{section.3.3}{3.3 Leaflet}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.4}{3.4 Other Libraries and Plugins}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.5}{3.5 Working Environments}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.6}{3.6 File Format}{chapter.3}% 12
+\BOOKMARK [2][-]{subsection.3.6.1}{3.6.1 Advantage}{section.3.6}% 13
+\BOOKMARK [2][-]{subsection.3.6.2}{3.6.2 Disadvantage}{section.3.6}% 14
+\BOOKMARK [1][-]{section.3.7}{3.7 Power line\(GeoJSON\) File Source}{chapter.3}% 15
+\BOOKMARK [0][]{chapter.4}{4 Software System}{}% 16
+\BOOKMARK [1][-]{section.4.1}{4.1 Requirement Analysis}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{4.2 Architecture}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.3}{4.3 User Interface}{chapter.4}% 19
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Control layer}{section.4.3}% 20
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Map API}{section.4.3}% 21
+\BOOKMARK [3][-]{subsubsection.4.3.2.1}{4.3.2.1 Functionality}{subsection.4.3.2}% 22
+\BOOKMARK [3][-]{subsubsection.4.3.2.2}{4.3.2.2 Connectivity between map and energy-charts}{subsection.4.3.2}% 23
+\BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Comparison List}{section.4.3}% 24
+\BOOKMARK [1][-]{section.4.4}{4.4 Data query process on energy charts}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.5}{4.5 Optimization of power line visualization}{chapter.4}% 26
+\BOOKMARK [2][-]{subsection.4.5.1}{4.5.1 Map Bounds}{section.4.5}% 27
+\BOOKMARK [2][-]{subsection.4.5.2}{4.5.2 The Length of Power line}{section.4.5}% 28
+\BOOKMARK [1][-]{section.4.6}{4.6 Summary and Discussion}{chapter.4}% 29
+\BOOKMARK [0][]{chapter.5}{5 Evaluation}{}% 30
+\BOOKMARK [1][-]{section.5.1}{5.1 Online survey setup}{chapter.5}% 31
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Question groups}{section.5.1}% 32
+\BOOKMARK [1][-]{section.5.2}{5.2 Survey Results and Discussion}{chapter.5}% 33
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Summary of participants and their backgrounds}{section.5.2}% 34
+\BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Working with the Interactive Map}{section.5.2}% 35
+\BOOKMARK [1][-]{section.5.3}{5.3 User Feedback}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.4}{5.4 Summary}{chapter.5}% 37
+\BOOKMARK [0][]{chapter.6}{6 Discussion}{}% 38
+\BOOKMARK [1][-]{section.6.1}{6.1 Advantage of the Tool}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.2}{6.2 Weakness}{chapter.6}% 40
+\BOOKMARK [0][]{chapter.7}{7 Conclusion and Future Work}{}% 41
+\BOOKMARK [1][-]{section.7.1}{7.1 Summary}{chapter.7}% 42
+\BOOKMARK [1][-]{section.7.2}{7.2 Future Work}{chapter.7}% 43
+\BOOKMARK [0][]{appendix*.70}{Appendix}{}% 44
+\BOOKMARK [0][]{appendix*.71}{Bibliography}{}% 45

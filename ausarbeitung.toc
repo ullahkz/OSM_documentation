@@ -1,0 +1,46 @@
+\select@language {american}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Related Work and Foundation}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Interactive Maps}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Visualization Techniques}{6}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Time series visualization}{8}{section.2.2}
+\contentsline {chapter}{\numberline {3}Background of This Project}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Concept}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Tools}{12}{section.3.2}
+\contentsline {section}{\numberline {3.3}Leaflet}{12}{section.3.3}
+\contentsline {section}{\numberline {3.4}Other Libraries and Plugins}{13}{section.3.4}
+\contentsline {section}{\numberline {3.5}Working Environments}{16}{section.3.5}
+\contentsline {section}{\numberline {3.6}File Format}{17}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Advantage}{19}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Disadvantage}{19}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.7}Power line(GeoJSON) File Source}{19}{section.3.7}
+\contentsline {chapter}{\numberline {4}Software System}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Requirement Analysis}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Architecture}{25}{section.4.2}
+\contentsline {section}{\numberline {4.3}User Interface}{25}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Control layer}{26}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Map API}{29}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Functionality}{31}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}Connectivity between map and energy-charts}{32}{subsubsection.4.3.2.2}
+\contentsline {subsection}{\numberline {4.3.3}Comparison List}{34}{subsection.4.3.3}
+\contentsline {section}{\numberline {4.4}Data query process on energy charts}{35}{section.4.4}
+\contentsline {section}{\numberline {4.5}Optimization of power line visualization}{41}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Map Bounds}{42}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}The Length of Power line}{43}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Summary and Discussion}{45}{section.4.6}
+\contentsline {chapter}{\numberline {5}Evaluation}{47}{chapter.5}
+\contentsline {section}{\numberline {5.1}Online survey setup}{47}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Question groups}{48}{subsection.5.1.1}
+\contentsline {section}{\numberline {5.2}Survey Results and Discussion}{49}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Summary of participants and their backgrounds}{49}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Working with the Interactive Map}{50}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}User Feedback}{55}{section.5.3}
+\contentsline {section}{\numberline {5.4}Summary}{55}{section.5.4}
+\contentsline {chapter}{\numberline {6}Discussion}{57}{chapter.6}
+\contentsline {section}{\numberline {6.1}Advantage of the Tool}{57}{section.6.1}
+\contentsline {section}{\numberline {6.2}Weakness}{57}{section.6.2}
+\contentsline {chapter}{\numberline {7}Conclusion and Future Work}{59}{chapter.7}
+\contentsline {section}{\numberline {7.1}Summary}{59}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future Work}{59}{section.7.2}
+\contentsline {chapter}{\nonumberline Appendix}{61}{appendix*.70}
+\contentsline {chapter}{\nonumberline Bibliography}{63}{appendix*.71}

@@ -1,0 +1,63 @@
+\select@language {american}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Interactive map showing the electricity production of Germany\relax }}{4}{figure.caption.9}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Interactive map showing how the United States generates its electricity\relax }}{5}{figure.caption.10}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Interactive map : Menu selection mechanism\relax }}{7}{figure.caption.13}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Interactive map with Selectable layers and Legend.\relax }}{8}{figure.caption.14}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces UK electricity generation by fuel type. Source:\cite {cbuk2016}\relax }}{9}{figure.caption.15}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces U.S Dry natural gas production by type. Source:\cite {eiagov}\relax }}{10}{figure.caption.16}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Impact of using marker cluster plugin\relax }}{14}{figure.caption.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {All power plants markers of Germany}}}{14}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Marker Cluster layer on Germany}}}{14}{subfigure.1.2}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Impact of using marker cluster and Leaflet label plugin\relax }}{15}{figure.caption.20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Spiderfy view of multiple power plants located in the same location. }}}{15}{subfigure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Label of a Gas Power Plant}}}{15}{subfigure.2.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Overpass turbo query wizard for generating query\relax }}{20}{figure.caption.25}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Overpass turbo API query (left) with rendered vector layer of 220kV power line (right) on the Openstreetmap\relax }}{20}{figure.caption.26}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The architecture of the visualization tool}}{26}{figure.caption.30}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces The main structure of the visualization page\relax }}{27}{figure.caption.31}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Navigation menu\relax }}{27}{figure.caption.32}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Tool tip for Check-boxes\relax }}{28}{figure.caption.33}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Navigation menu with all power plant selected.\relax }}{28}{figure.caption.35}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Navigation menu where one energy-source is deselected.\relax }}{28}{figure.caption.36}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces A German state (Baden-W\IeC {\"u}rttemberg) is highlighted}}{29}{figure.caption.37}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Interactive map area}}{30}{figure.caption.38}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Showing the geographical location of all power plants with markers.\relax }}{31}{figure.caption.39}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Showing all nuclear power plants.\relax }}{32}{figure.caption.40}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Marker Pop-up box\relax }}{33}{figure.caption.41}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {A marker pop-up of Gas power plant}}}{33}{subfigure.11.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {A marker pop-up of Nuclear power plant}}}{33}{subfigure.11.2}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Buttons inside pop-up box}}{34}{figure.caption.42}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Wind-offshore(3) power plants are listed on the comparison table}}{35}{figure.caption.43}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Energy Chart showing the hourly production data}}{36}{figure.caption.44}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Hyperlink of "Go to Energy Charts"\relax }}{37}{figure.caption.45}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Steps of adding power plants to the comparison list}}{38}{figure.caption.46}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Selected power plant data from the comparison table of Figure \ref {fig:stepsPP}\relax }}{40}{figure.caption.48}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces All possible data format that be extracted from the Overpass-turbo API\relax }}{42}{figure.caption.51}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Filtering power lines depending on the map bounds\relax }}{43}{figure.caption.52}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Complete 380kV power line in the Germany (zoom level 6, no filtering)}}}{43}{subfigure.19.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {380kv power line through Berlin (zoom level 8, filtered by map bounds)}}}{43}{subfigure.19.2}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Filtering power lines by coordinate length\relax }}{44}{figure.caption.54}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {100kV power line (zoom level<6, coordinate length > 45)}}}{44}{subfigure.20.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {100kV power line (zoom level 8, coordinate length > 20)}}}{44}{subfigure.20.2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Age ration and professional background of survey participants\relax }}{49}{figure.caption.59}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Age ratio of participants}}}{49}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Professional backgroud of survey participants}}}{49}{subfigure.1.2}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Familiarity with German power plants and their production\relax }}{50}{figure.caption.60}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces The result of online survey - participants frequency of using interactive map per week\relax }}{51}{figure.caption.61}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces The result of online survey - map usability\relax }}{51}{figure.caption.62}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces The evaluation result of online survey\relax }}{52}{figure.caption.63}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {The evaluation result of map usability by participants}}}{52}{subfigure.5.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {The evaluation result of interface and functionality by participants}}}{52}{subfigure.5.2}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces The evaluation result of complete visualization tool\relax }}{54}{figure.caption.68}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {The evaluation result of - "I found the interactivity very complex"}}}{54}{subfigure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {The evaluation result of - "I think that I would need a tutorial before using this visualization tool"}}}{54}{subfigure.6.2}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces The result of online survey - complete map usability and usefulness\relax }}{54}{figure.caption.69}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

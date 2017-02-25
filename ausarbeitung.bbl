@@ -1,0 +1,91 @@
+\begin{thebibliography}{HHWN02}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[BW08]{Byron2008}
+L.~Byron, M.~Wattenberg.
+\newblock {Stacked Graphs -- Geometry \& Aesthetics}.
+\newblock \emph{IEEE Transactions on Visualization and Computer Graphics},
+  14(6):1245--1252, 2008.
+\newblock \doi{10.1109/TVCG.2008.166}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1109/TVCG.2008.166}.
+
+\bibitem[Cro06]{jsonfatfree2006}
+D.~Crockford.
+\newblock JSON: The Fat-Free Alternative to XML, 2006.
+\newblock \urlprefix\url{https://www.json.org/fatfree.html}.
+
+\bibitem[DBH16]{CGF12910}
+M.~Di~Bartolomeo, Y.~Hu.
+\newblock {There is More to Streamgraphs than Movies: Better Aesthetics via
+  Ordering and Lassoing}.
+\newblock \emph{Computer Graphics Forum}, 35(3):341--350, 2016.
+\newblock \doi{10.1111/cgf.12910}.
+\newblock \urlprefix\url{http://dx.doi.org/10.1111/cgf.12910}.
+
+\bibitem[DE16]{gportal2016}
+G.~DE.
+\newblock Kraftwerke ab 100 MW, 2016.
+\newblock
+  \urlprefix\url{http://www.geoportal.de/DE/Geoportal/Karten/karten.html}.
+
+\bibitem[Eia17]{eiagov}
+Eia.
+\newblock Annual Energy Outlook 20017, 2017.
+\newblock \urlprefix\url{http://www.eia.gov/outlooks/aeo/pdf/0383(2017).pdf}.
+
+\bibitem[HB08]{geojson16}
+M.~D. H.~Butler.
+\newblock The GeoJSON Format Specification, 2008.
+\newblock \urlprefix\url{http://www.geojson.org/geojson-spec.html}.
+
+\bibitem[HHWN02]{981848}
+S.~Havre, E.~Hetzler, P.~Whitney, L.~Nowell.
+\newblock {ThemeRiver: visualizing thematic changes in large document
+  collections}.
+\newblock \emph{IEEE Transactions on Visualization and Computer Graphics},
+  8(1):9--20, 2002.
+\newblock \doi{10.1109/2945.981848}.
+
+\bibitem[JMG15]{wp2015}
+D.~K. John~Muyskens, S.~Granados.
+\newblock Mapping how the United States generates its electricity, 2015.
+\newblock
+  \urlprefix\url{https://www.washingtonpost.com/graphics/national/power-plants}.
+
+\bibitem[MB08]{boxoffice}
+L.~B. Mathew~Block.
+\newblock The Ebb and Flow of Movies: Box Office Receipts 1986-2008, 2008.
+\newblock
+  \urlprefix\url{http://www.nytimes.com/interactive/2008/02/23/movies/20080223_REVENUE_GRAPHIC.html}.
+
+\bibitem[MS03]{1261490}
+W.~Muller, H.~Schumann.
+\newblock Visualization methods for time-dependent data - an overview.
+\newblock In \emph{Proceedings of the 2003 Winter Simulation Conference,
+  2003.}, volume~1, pp. 737--745 Vol.1. 2003.
+\newblock \doi{10.1109/WSC.2003.1261490}.
+
+\bibitem[SE15]{cbuk2016}
+R.~P. S.~E.
+\newblock {Mapped: How the UK generates its electricity}, 2015.
+\newblock
+  \urlprefix\url{https://www.carbonbrief.org/mapped-how-the-uk-generates-its-electricity}.
+
+\bibitem[SE16]{cbg2016}
+R.~P. S.~Evans.
+\newblock {Mapped: How Germany generates its electricity}, 2016.
+\newblock
+  \urlprefix\url{https://www.carbonbrief.org/how-germany-generates-its-electricity}.
+
+\bibitem[Zei12]{jsontoobig}
+J.~Zeigler.
+\newblock How Big is Too Big For JSON?, 2012.
+\newblock
+  \urlprefix\url{http://josh.zeigler.us/technology/web-development/how-big-is-too-big-for-json/}.
+
+\end{thebibliography}

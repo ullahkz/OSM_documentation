@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="65.024mm" height="42.3332mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 6502 4233"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:aqua;stroke-width:16.93;stroke-dasharray:33.860000 50.790000}
+    .str1 {stroke:aqua;stroke-width:20;stroke-dasharray:40.000000 60.000000}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+   <clipPath id="id0">
+    <rect x="355" y="443" width="2963" height="3361"/>
+   </clipPath>
+   <clipPath id="id1">
+    <rect x="3656" y="1964" width="2472" height="313"/>
+   </clipPath>
+   <clipPath id="id2">
+    <rect x="3649" y="3255" width="2489" height="339"/>
+   </clipPath>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g style="clip-path:url(#id0)">
+   <image id="Object_x0020_1" x="355" y="443" width="2963" height="3361" xlink:href="popupbutton_Images\popupbutton_ImgID1.png"/>
+  </g>
+  <g style="clip-path:url(#id1)">
+   <image id="Object_x0020_1_0" x="3656" y="1964" width="2472" height="313" xlink:href="popupbutton_Images\popupbutton_ImgID2.png"/>
+  </g>
+  <g style="clip-path:url(#id2)">
+   <image id="Object_x0020_1_1" x="3649" y="3255" width="2489" height="339" xlink:href="popupbutton_Images\popupbutton_ImgID3.png"/>
+  </g>
+  <line class="fil0 str0" x1="3023" y1="2760" x2="6129" y2= "2278" />
+  <line class="fil0 str1" x1="643" y1="2523" x2="3656" y2= "1964" />
+  <line class="fil0 str1" x1="660" y1="3056" x2="3649" y2= "3594" />
+  <line class="fil0 str1" x1="2980" y1="2836" x2="6138" y2= "3255" />
+ </g>
+</svg>

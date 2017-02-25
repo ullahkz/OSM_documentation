@@ -1,0 +1,84 @@
+\chapter{Discussion}
+\label{chap:discussion}
+In this chapter the advantages of the system are highlighted and supported by observations and feedback of the studies. Furthermore, the weaknesses of the system are discussed and possibilities how they can be eliminated are introduced. Last the requirements for an optimal system are described, based on the observations and experiences gained within the creation of this thesis.
+
+One of the major advantages of the VEII toolkit is its ability to enable users to create and manage content in one system. Users do not need multiple software like Adobe Photoshop for images or Microsoft Word for texts to create and compose different types of content. Participants where enthusiastic about having all media in one place. They mentioned that preparing and composing exhibitions is much easier with a central system where content is collected and managed as well as composed and adapted. 
+Another advantage is the similarity of the user interface to existing software. Therefore, many users get used to the system very quick and feel more confident while using it. Although, the similarity to existing software causes higher expectations on the system. Participants associated the toolkit with software like Microsoft Powerpoint and therefore compared them subconscious. As a result many participants wished for a higher variety of features for creating content like shapes or circles. Furthermore, they wished for a Powerpoint-like creation of animation where multiple states of content entities and the transition between them can be defined.
+The key feature of the VEII toolkit is the mobile on-site content editing. Users are able to visit the installation on-site with a mobile device and tweak the content created on the desktop computer while getting immediate feedback from the target display device. Thereby the toolkit supports the user by automatically adapting the content on the chosen resolution. Furthermore, the system takes over the task of deploying content to the display device, users only need to choose the required target. Thus, the toolkit reduces the time which was needed to create, deploy and adapt interactive installations and supports the user while adapting the content according to the environment on-site. The participants where very excited about the on-site content editing because until now they mostly where not able to adapt the content of the interactive installations by themselves or it was very complex and cumbersome. Additionally, the participants emphasized on the opportunities that arise from the on-site editing approach like adapting content according to the expected audience on a daily basis. In particular there was one aspect which came up within the studies. Changing the font-size in a rich-text editor on a mobile device is ponderous and therefore lowers the advantages of the on-site editing approach. Because of this a prototype in form of a slider for changing the font-size of on a mobile device was implemented however the changes apply on all parts of the given text. So if a user sets different font-sizes in different parts of the text, they would be all set to the new font-size while using the slider. Nevertheless, the VEII toolkit supports texts with different font-sizes by using multiple text entities or by not using the prototype. 
+The next advantage of the VEII toolkit is its connection to the meSchup platform. Users are enabled to create interactivity by using external sensors without technical expertise of the hard- or software needed to configure them. The meSchup platform is handling the communication between the devices and systems as well as the execution of the behavior rules. Additionally, the VEII toolkit provides an easy and understandable way for users to adapt parameters of rules which define the interactivity behavior. Therefore, developers can write a text-based story and supplement it with predefined UI elements which users can adapt to their needs. The complex implementation behind the behavior rules is hidden from the user so they do not get confused or lose self-esteem while using the toolkit. In the future an online-platform could be created where developers can upload and share their created behavior rules as well as users can search rules according to their hardware. Thus, the users have to find out what values are best for the parameters of a specific behavior rule and therefore have to go trough several try and change cycles. The VEII toolkit on the one hand supports the user by enabling him to do this changes on-site but on the other hand it would be a great improvement if the user could change parameters by demonstrating the value using the actual sensor. The meSchup platform already supports programming by demonstration so it is conceivable that this feature will be integrated into the VEII toolkit. Nevertheless, the VEII toolkit does not eliminate the need for technical experts by now. Users are not enabled to create the implementation of the behavior rules by themselves. One approach to solve this problem could be a Snap\footnote{Official Snap Website, \url{http://snap.berkeley.edu/} (last accessed on \today)}-like editor where users can create rules by dragging and dropping predefined elements while the code gets generated in the background automatically. The VEII toolkit only supports the creation of stories by using predefined UI elements which represent parameters of the rule implementation and not the actual implementation of interactive behavior.
+ 
+%- vorteile:
+%	-! verwalten/erstellen/anpassen des contents und erstellen der präsentation in einem tool
+%	-! einfach einstieg durch ähnlichkeiten mit exisitierenden programmen
+%	-! inhalt automatisch anpassbar an verschiedenste display geräte (resolution)
+%	-! on-site editing bietet gute möglichkeit um inhalt einerseits schnell an die umgebung anzupassen, aber auch um inhalt an den betrachter anzupassen
+%	- "einfach zugang zu sensoren und aktuatoren
+%	- !komplexes verhalten mit sensoren kann von nicht experten angepasst werden 
+%	- !verstecken des komplexen codes durch die story -> NICHT if this then that
+%	- unterstütz playful experimentation wegen geringen deploy aufwand
+
+%- nachteile:
+%- technischer aufbau muss von experten gemacht werden 
+%	-! durch ähnlichkeit mit powerpoint gab es erhöhte erwartungen an das system (Funktionalität)
+%	-! schwierigkeiten font-size -> prototyp
+%	-! templates müssen von programmierern vorbereitet werden -> möglichkeit 
+%	- templates enthalten möglicherweise komplexe begriffe / user wissen nicht welches hardware gerät sie auswählen müssen -> verwendung eines sensors durch aktivierung
+%	- Parameter müssen manuelle eingetragen werden -> werte durch aktivieren des sensors (abstand, druck)
+%	- leistungsschwache geräte haben probleme mit audio und video -> geräteabhängig
+%	- leistungsschwache geräte habe probleme mit translation (HTML5) -> (hardware kann das auch schon)
+
+%So an optimal system should support the user in creating and interactive installation with digital content without the need for any technical expertise. 
+So the VEII toolkit offers parts of the features an optimal system would need. It contains the on-site editing as well as easy access to sensors and actuators and enables users to create interactivity on their own. But to be an optimal system the VEII toolkit would need to provide a bigger variety of creating content for example basic shapes like circles or rectangles but also dynamic content in from of widgets which could contain HTML, CSS and JavaScript. Furthermore, an optimal system would offer the opportunity to create and implement behavior rules by using the graphical user interface without the need of any coding experience. Additionally, users should be enabled to use the actual sensors to define values for parameters within the behavior rule which is already implemented in the meSchup platform. Additionally, user should be able to target the actuators of devices within the behavior rules and not only the digital content displayed in web-views. 
+
+\iffalse
+- optimales system:
+	- mehr möglichkeiten inhalt zu erstellen (shapes)
+		- erweiterung der display geräte -> nicht nur webview, sondern hardware (vibration) 
+	- hauptsächlich verbesserungsbedarf im regel teil.
+		- erstellung von regeln mit code durch nicht experten
+		- einfaches drag and drop system
+		- möglichkeiten regeln zu teilen
+\fi
+
+
+\chapter{Conclusion and Future Work}
+\label{chap:conclusion}
+
+\section*{Conclusion}
+This thesis proposed an approach for mobile on-site content editing for interactive installations in form of the VEII toolkit for creating and composing digital content as well as creating behavior rules to manipulate content on triggering different sensors. Furthermore, there is a mobile component which enables users to change content on-site while getting immediate feedback from the display device using a mobile device. Therefore, the VEII toolkit is connected to the meSch EU projects' meSchup platform which minimizes the technical boundaries for non technical experts to create smart environments and enables non technical experts to use all kind of sensors and actuators. 
+Related work in the field of creating and deploying interactive installation never faces the task of enabling non technical experts to create interactive installation with digital content. Therefore, the VEII toolkit was implemented.
+The toolkit consists out of three main components which are accessible via a web-based graphical user interface. Firstly the content management part where users can create and manage content like text, images, audio and video. Secondly the VEII Slide Editor where users are enabled to add and compose media on different slides like known from Microsoft Powerpoint. Thirdly the VEII Rule Editor where users can choose behavior rules from different templates in which the complex implementation is hidden by using so called "stories". Furthermore, technical experts are enabled to create behavior rule templates and explain them using a "story". Within a "story" they can insert placeholders for different parameters of the code, so non technical experts are enabled to adapt the behavior rules without any technical expertise. 
+
+The evaluation within two different studies showed that the approach of using mobile devices to enable users to adapt content in situation lowers the boundaries of authors to create interactive installation. Furthermore, the participants were very positive about the system and were really interested in using it in their professional environment. Especially the on-site editing part as well as the possibility to adapt or change content very fast was highlighted by the participants.
+
+\section*{Future Work}
+In the following ideas and possible features which came up during the development of the VEII toolkit or which where given as feedback at the studies will be introduced. They give a hint in which direction the system could go in the future.
+\newline
+
+\textbf{Widgets}
+\newline
+Implementing widgets will be a key feature in the further development of the system. A widget is a media type which can contain web-based content like HTML, CSS and JavaScript. It would enable users to create and display dynamic content. Therefore, it is conceivable to display whole website or snippets which are actually implemented for the VEII toolkit. Widgets could especially target the social media channels, for example a user could project his Facebook newsfeed on to the wall next to his television. By using widgets the system would reach a brighter audience and not only specific cases where static content should be displayed.
+\newline
+
+\textbf{Slide Templates}
+\newline
+Multiple participants wished for predefined slide templates. Enable users to create and use slide templates for on the one hand making the creation process even shorter and on the other hand guaranteeing the equality of multiple slides. Slide templates could furthermore promote the communication between different users of the system. The idea of adding anchors to improve the alignment of content entities somehow belongs to the approach of slide templates because it would support the creation process.
+\newline
+
+\textbf{Adapting font-size}
+\newline
+It is very cumbersome to edit the font-size of text within a rich-text editor. Therefore, a prototype for adapting the font-size of text with a slider-element was implemented. The prototype though is very restrictive and only allows to change font-size of the whole text within the rich-text editor. Creating and evaluating new ways to adapt the font-size within a rich-text editor would support the on-site editing approach as text is the most used media type within interactive installations.
+
+\textbf{Combining behavior rules}
+\newline
+During the studies it became clear that using one rule for every part of the interactivity will become messy fast. In a short time the user would create a high amount of rules and would lose the overall view. Enabling the user to combine multiple rule templates in one single rule would improve the organization and the management of the interactivity.
+\newline
+
+\textbf{Behavior Rule Collection}
+\newline
+One of the most important features which should be implemented is a behavior rule collection. In the best case a web-based platform would be implemented to enable experts to upload their created behavior rules. Non experts therefore could search for their templates on the platform according to their hardware specific needs. Furthermore, there could be added a request feature where non experts could describe the behavior rule they need and any expert could implement the code for them.
+\newline
+
+\textbf{Behavior Rules for Devices}
+\newline
+By now the VEII toolkit supports users to create and adapt behavior rules to establish interactive content. So users can for example move, scale and rotate content entities using rules. An improvement to the system would be to integrate the opportunity to create rules which aim at actuators of devices like vibration on a mobile phone. This would bring interactive installations to a higher level. A possible use case would be while walking through a museum and the own smartphone signals if there is something interesting nearby. This could be achieved by using Bluetooth to detect the phone and a rule which triggers the vibration actuator.
