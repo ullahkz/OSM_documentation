@@ -40,9 +40,9 @@
 \contentsline {figure}{\numberline {4.19}{\ignorespaces Filtering power lines depending on the map bounds\relax }}{43}{figure.caption.52}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Complete 380kV power line in the Germany (zoom level 6, no filtering)}}}{43}{subfigure.19.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {380kv power line through Berlin (zoom level 8, filtered by map bounds)}}}{43}{subfigure.19.2}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Filtering power lines by coordinate length\relax }}{44}{figure.caption.54}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {100kV power line (zoom level<6, coordinate length > 45)}}}{44}{subfigure.20.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {100kV power line (zoom level 8, coordinate length > 20)}}}{44}{subfigure.20.2}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Filtering power lines by coordinate length\relax }}{45}{figure.caption.54}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {100kV power line (zoom level<6, coordinate length > 45)}}}{45}{subfigure.20.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {100kV power line (zoom level 8, coordinate length > 20)}}}{45}{subfigure.20.2}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Age ration and professional background of survey participants\relax }}{49}{figure.caption.59}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Age ratio of participants}}}{49}{subfigure.1.1}
