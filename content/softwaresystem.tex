@@ -231,7 +231,7 @@ In the Section \ref{sssec:connectivity}, how the interactive map is connected to
 
 As mentioned before there are two different ways to access and view the hourly electricity production data. The basic difference between these two approaches is not much. “Go to Energy Charts” button passes only two variables (\textit{source} and \textit{ID}) over URL and direct to energy chart page. Figure \ref{fig:url} shows how the underlying link of the button is updated dynamically. 
 
-\begin{figure} [H]
+\begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{url}
 \caption{Hyperlink of "Go to Energy Charts"}
@@ -324,7 +324,7 @@ var inputData = [
 \label{lst:dataFile}
 \end{Listing}
 
-[language=JSON,firstnumber=1]
+%[language=JSON,firstnumber=1]
 \begin{Listing} [H]
 \begin{lstlisting}
 IF link variables exists THEN
@@ -351,16 +351,29 @@ end IF
 
 ELSE Enable Series
 \end{lstlisting}
-\caption{JavaScript pseudo code for checking unit ids and enabling their visibility on the charts}
+\caption[pseudo code for checking unit ids]{JavaScript pseudo code for checking unit ids and enabling their visibility on the charts}
 \label{lst:algo}
 \end{Listing}
 
 This part of the code is the new contribution to the existing energy chart. Line 1 of List \ref{lst:algo} checks the existence of parameter on URL. This function runs if URL parameters are available. Line 2 checks the number of the URL parameter (less or greater than 1). If the type of \textit{ID} is object then starts executing from line 2. Conversely, the function starts executing from line 13 if the number of \textit{ID} elements are more than one. Subsequently, function repeatedly checks the availability of unit ids from URL inside the data series. For this purpose, Line 6 enables the visibility of that data series on the chart if its unit id matches whereas unmatched data series are disabled on line 9. After executing this code users get the actual desired data illustrated on the chart which were queried over the link.
 
+\section{Interlinking the Energy Chart with the Map}
+
+In Section \ref{sssec:connectivity}, the connectivity from the map to the energy chart is introduced where users can move to energy chart from the map to see the hourly electricity production of power plants. Likewise, an additional feature is imposed to the energy charts to establish a connection from energy-charts to the map. 
+
+Energy chart users can locate the power plants on the interactive map. Firstly users need to select a source category to see their hourly production in the form of stacked are chart. After selecting a source from the navigation bar of energy chart, a button "Power plant locations" appears at the bottom of the chart. This button enables users to see the location of all power plants of the selected source. For example, a energy chart user is watching the electricity production of all gas power plant unit. Now the user is interested to see the locations of those power plants inside Germany. The locations of all gas power plant is shown on the map by clicking on "Power plant locations" (see Figure \ref{fig:interlink}). The function of this button is dynamically updated when user changes the source category from the navigation bar. 
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{interlinkButton}
+\caption{Interlinking between energy charts and the map}
+\label{fig:interlink}
+\end{figure}
+
 \section{Optimization of power line visualization}
 \label{sec:powerLine}
 
-In addition to the visualization of power plant location, showing the power transmission line is also a part of functional requirements. Therefore, our application provides an option for visualizing power transmission lines for 110kV, 220kV, and 380kV. Information about the data source is already discussed in Chapter~\ref{chap:background} Section \ref{sec:plsource}. Data was extracted in the format of geoJSON from the openstreetmap database. Figure \ref{fig:export} showing the available data formats that can be extracted using the overpass-turbo API. Leaflet supports GeoJSON and provides flexibility to map GeoJSON file there we have decided to use this format. Leaflet parses GeoJSON data and creates feature layers. Finally, the function displays the power transmission line to the map.
+In addition to the visualization of power plant location, showing the power transmission line is also a part of functional requirements. Therefore, our application provides an option for visualizing power transmission lines for 110kV, 220kV, and 380kV. Information about the data source is already discussed in Chapter~\ref{chap:background} Section \ref{sec:plsource}. Data was extracted in the format of geoJSON from the OpenStreetMap database. Figure \ref{fig:export} showing the available data formats that can be extracted using the overpass-turbo API. Leaflet supports GeoJSON and provides flexibility to map GeoJSON file there we have decided to use this format. Leaflet parses GeoJSON data and creates feature layers. Finally, the function displays the power transmission line to the map.
 
 \begin{figure}
 \centering

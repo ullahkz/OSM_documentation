@@ -24,20 +24,20 @@
 \contentsline {subsubsection}{\numberline {4.3.2.2}Connectivity between map and energy-charts}{32}{subsubsection.4.3.2.2}
 \contentsline {subsection}{\numberline {4.3.3}Comparison List}{34}{subsection.4.3.3}
 \contentsline {section}{\numberline {4.4}Data query process on energy charts}{35}{section.4.4}
-\contentsline {section}{\numberline {4.5}Optimization of power line visualization}{41}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Map Bounds}{42}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}The Length of Power line}{43}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Summary and Discussion}{44}{section.4.6}
+\contentsline {section}{\numberline {4.5}Interlinking the Energy Chart with the Map}{41}{section.4.5}
+\contentsline {section}{\numberline {4.6}Optimization of power line visualization}{42}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Map Bounds}{43}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}The Length of Power line}{44}{subsection.4.6.2}
+\contentsline {section}{\numberline {4.7}Summary and Discussion}{45}{section.4.7}
 \contentsline {chapter}{\numberline {5}Evaluation}{47}{chapter.5}
 \contentsline {section}{\numberline {5.1}Online survey setup}{47}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Question groups}{48}{subsection.5.1.1}
 \contentsline {section}{\numberline {5.2}Survey Results and Discussion}{49}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Summary of participants and their backgrounds}{49}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Working with the Interactive Map}{50}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}User Feedback}{55}{section.5.3}
+\contentsline {subsection}{\numberline {5.2.2}Working with the Interactive Map}{52}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}User Feedback}{54}{section.5.3}
 \contentsline {section}{\numberline {5.4}Summary}{55}{section.5.4}
 \contentsline {chapter}{\numberline {6}Discussion}{57}{chapter.6}
 \contentsline {chapter}{\numberline {7}Conclusion and Future Work}{59}{chapter.7}
-\contentsline {section}{\numberline {7.1}Future Work}{60}{section.7.1}
-\contentsline {chapter}{\nonumberline Appendix}{61}{appendix*.70}
-\contentsline {chapter}{\nonumberline Bibliography}{63}{appendix*.71}
+\contentsline {chapter}{\nonumberline Appendix}{61}{appendix*.72}
+\contentsline {chapter}{\nonumberline Bibliography}{71}{appendix*.73}

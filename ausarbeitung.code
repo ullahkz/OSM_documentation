@@ -6,8 +6,8 @@
 \addvspace {10\p@ }
 \contentsline {Listing}{\numberline {4.1}{\ignorespaces URL variables are handled using JavaScript\relax }}{39}{Listing.caption.47}
 \contentsline {Listing}{\numberline {4.2}{\ignorespaces Example of hourly production JSON data object\relax }}{40}{Listing.caption.49}
-\contentsline {Listing}{\numberline {4.3}{\ignorespaces JavaScript pseudo code for checking unit ids and enabling their visibility on the charts\relax }}{41}{Listing.caption.50}
-\contentsline {Listing}{\numberline {4.4}{\ignorespaces Power line filtering algorithm depending on the map bound\relax }}{44}{Listing.caption.53}
+\contentsline {Listing}{\numberline {4.3}{\ignorespaces pseudo code for checking unit ids}}{41}{Listing.caption.50}
+\contentsline {Listing}{\numberline {4.4}{\ignorespaces Power line filtering algorithm depending on the map bound\relax }}{44}{Listing.caption.54}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

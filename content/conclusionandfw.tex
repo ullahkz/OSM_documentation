@@ -7,3 +7,21 @@ The online survey evaluation study showed that the participants adapted the tool
 
 \section*{Future Work}
 
+In the following, new design concepts and some must-have features which arises during the development of the interactive map and from the feedback of online survey participants will be presented. 
+
+\textbf{Database}
+\newline
+Implementing a database will be a key part in the further development of the system. It would enable adding new features to the map which are computationally expensive with existing framework. At the moment, energy charts and interactive map are parsing JSON files in the client side and doing large calculations in the browser which is not efficient. The performance of the map affects while parsing large GeoJSON file. A database management system would ease tasks by performing this large calculations in the server-side.
+
+\textbf{Marker Cluster}
+\newline
+According to the EEX data, there are many power plants located in the same geographical location. After plotting them on the map using markers, users can only see a single marker on that position. Other plants are hidden by that single marker. The marker cluster plugin solved this problem to some extent. However, users were confused by this visualization technique. Therefore, a new way of visualizing this cluster would help for giving user more detailed information about their existence the map.
+
+\textbf{Compare different sources}
+\newline
+Many participants wished for comparing multiple power sources in the comparison table as well as in the energy charts. This feature would enable users to compare electricity production of different power source units.
+
+\textbf{Information on Solar plants}
+\newline
+During the survey it was clear that participants are very much interested in having information on solar power plants. This interactive data visualization tool would be more informative if the map can provide information on solar PV and solar thermal power plants. 
+
