@@ -89,7 +89,7 @@ Bootstrap buttons, check boxes and drop-down navigation menus styling provides a
 Before developing the online visualization tool of German power plants Fraunhofer Institute for Solar Energy System (ISE) was providing interactive charts on electricity production, electricity stock market prices and import/export of electricity at the website Energy-Charts\footnote{Energy-Chart official webpage, \url{http://www.energy-charts.de/} (last accessed on {\today})}. This whole framework is developed based on JavaScript libraries. For visualizing data, bar chart, ThemeRiver, stacked Multi-Bar chart, and Pie chart are used. To make the chart interactive D3.js\footnote{d3.js official website, \url{https://d3js.org/} (last accessed on {\today})} and NVD3.js\footnote{NVD3.js official website, \url{http://nvd3.org/} (last accessed on {\today})} JavaScript libraries are taken into account. Electricity production of power plants, stock market prices, and import/export data are stored in the web server. There is no database for storing all these data. Therefore, the data used for our visualization tool is also stored in the web server. Other required JavaScript libraries, plugins, dependencies are stored in the webserver of Energy-Charts.
 
 %[language=json,firstnumber=1]
-\begin{Listing}[H]
+\begin{Listing}
 \begin{lstlisting}
 var Power_Plants = [
   { 
@@ -126,7 +126,7 @@ var Power_Plants = [
 All the data sources that have been used for power plant visualization and their production in the enrgy charts are in the JSON\footnote{JSON official website, \url{https://json.org/} (last accessed on {\today})}(JavaScript Object Notation) format. This is data format is language-independent and use the extension .json. The MasterData power file is received in CSV (Comma-seperated values) format which is downloaded from the EEX\footnote{European Energy Exchange, \url{https://www.eex.com} (last accessed on {\today})} server. Fraunhofer ISE is authorized to download the files from the FTP server in csv format and later it is converted into JSON data. List \ref{lst:pp-json} shows an example how power plant files are structured in JSON. As we are using JavaScript libraries like Leaflet and NVD3, both support JSON data as input. It is easier to extract information from a large file if data and features are organized in such structured way. 
 
 %[language=json,firstnumber=1]
-\begin{Listing}[H]
+\begin{Listing}
 \begin{lstlisting}
 var _110KV_layer = [
     {
@@ -190,7 +190,7 @@ Data for power lines are extracted from the overpass-turbo\footnote{Overpass tur
   \end{center}
 \end{figure} 
 
-\begin{figure} [H]
+\begin{figure}
   \begin{center}
     \includegraphics[width=1\textwidth]{optg}
     \caption[Overpass turbo API]{Overpass turbo API query (left) with rendered vector layer of 220kV power line (right) on the OpenStreetMap}
