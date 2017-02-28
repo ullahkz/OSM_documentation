@@ -8,7 +8,7 @@ The vision of this project is to provide an interactive map for users who are in
 \section{Requirement Analysis}
 \label{sec:reqAn}
 
-As mentioned before, to implement Energy Chart JavaScript library is used. Plant data are stored as JSON files on the server. Hence, for creating an interactive map as an extension to the Energy Chart and to match the functionality with the existing charts, JavaScript mapping library is also used for this project. Our goal was to create an interactive map which is dedicated to the power plants of Germany. Before implementing the tool, the basic must-have components for the map must be specified. Therefore, following things were considered as a list of requirements for the map to enable a quick exchange of information between users and the map.
+As mentioned before, to implement Energy Chart JavaScript library has been used. Plant data are stored as JSON files on the server. Hence, for creating an interactive map as an extension to the Energy Chart and to match the functionality with the existing charts, JavaScript mapping library is also used for this project. Our goal was to create an interactive map which is dedicated to the power plants of Germany. Before implementing the tool, the basic must-have components for the map must be specified. Therefore, following things were considered as a list of requirements for the map to enable a quick exchange of information between users and the map.
 
 \section*{System Requirements}
 \begin{itemize}
@@ -187,7 +187,7 @@ Along with the geographical location representation, information about each powe
 \end{center}
 \end{figure}
 
-\subsubsection{Connectivity between map and energy-charts}
+\subsubsection{Connectivity between Map and Energy Charts}
 \label{sssec:connectivity}
 
 In this section, the connectivity between interactive map and energy chart is discussed. This was one of the main functional requirements for our interactive map application.
@@ -222,6 +222,13 @@ Our interactive map provides an additional feature, where users can compare mult
 \label{fig:eccharts}
 \end{figure}
 
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{url}
+\caption{Hyperlink of "Go to Energy Charts"}
+\label{fig:url}
+\end{figure}
+
 Only power plants from the same source category can be compared on the comparison list. Users can add as many power plants as needed in the comparison list from different source category but this approach disables the functionality to compare them on energy charts page. For example, if users are interested to view the electricity production of Nuclear(Uranium) power plants then users should include only Nuclear power plants to the comparison list and use the "Compare on Energy Charts" to see their production. Currently, the energy charts can only illustrate the hourly data for a single source category. There is a form, inside the gray area with some radio buttons, for controlling the chart and to see the electricity production on the chart for different sources (see Figure \ref{fig:eccharts}). Energy charts provides the unit wise electricity production data for Hydro, Nuclear, Brown Coal (lignite), Hard Coal, Gas, Pumped storage, Oil, Wind-offshore, and Wind-onshore power sources. At present there is no data available for Biomass, Seasonal storage, Garbage, and Others source category. Therefore, it is not possible to see their production and compare them on energy charts.   
 
 \section{Data query process on energy charts}
@@ -231,16 +238,9 @@ In the Section \ref{sssec:connectivity}, how the interactive map is connected to
 
 As mentioned before there are two different ways to access and view the hourly electricity production data. The basic difference between these two approaches is not much. “Go to Energy Charts” button passes only two variables (\textit{source} and \textit{ID}) over URL and direct to energy chart page. Figure \ref{fig:url} shows how the underlying link of the button is updated dynamically. 
 
-\begin{figure}
-\centering
-\includegraphics[width=1\textwidth]{url}
-\caption{Hyperlink of "Go to Energy Charts"}
-\label{fig:url}
-\end{figure}
-
 The functionality of "Compare on Energy Charts" button is also discussed before in Section \ref{sssec:connectivity}. The functionality of this button is to pass one or more unit ids over the URL. When a user adds a new power plant to the comparison list, the unit id of that power plant is added inside the \textit{ID} variable. Consequently, the link of the "Compare on Energy Charts" button is updated in the background. Figure \ref{fig:stepsPP} shows different steps of adding more than one power plant in the comparison list and how the link is updated in every step. This approach starts when users want to compare one or more than one power plants. For example, a user wants to compare the capacity and hourly production of three Nuclear power plants. In Step 1, user opened a pop-up window of a Nuclear plant and added this to the comparison list by clicking on the "Compare" button. Step 2 and Step 3 can be done in the similar way. Therefore, two more power plants are added to the comparison table. Thus, in total three unit ids are added to the \textit{ID} and the redirect link for "Compare on Energy Charts" is updated as showed in the Figure \ref{fig:stepsPP}. 
 
-\begin{figure} [H]
+\begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{multiplechart}
 \caption[Steps of adding power plants to the comparison list]{Step 1: a nuclear plant is added into the comparison list - unit id added to the link; Step 2: another nuclear plant is added - new unit id added; Step 3: The last one is added into the list - unit id added and link is updated}
@@ -357,18 +357,18 @@ ELSE Enable Series
 
 This part of the code is the new contribution to the existing energy chart. Line 1 of List \ref{lst:algo} checks the existence of parameter on URL. This function runs if URL parameters are available. Line 2 checks the number of the URL parameter (less or greater than 1). If the type of \textit{ID} is object then starts executing from line 2. Conversely, the function starts executing from line 13 if the number of \textit{ID} elements are more than one. Subsequently, function repeatedly checks the availability of unit ids from URL inside the data series. For this purpose, Line 6 enables the visibility of that data series on the chart if its unit id matches whereas unmatched data series are disabled on line 9. After executing this code users get the actual desired data illustrated on the chart which were queried over the link.
 
-\section{Interlinking the Energy Chart with the Map}
-
-In Section \ref{sssec:connectivity}, the connectivity from the map to the energy chart is introduced where users can move to energy chart from the map to see the hourly electricity production of power plants. Likewise, an additional feature is imposed to the energy charts to establish a connection from energy-charts to the map. 
-
-Energy chart users can locate the power plants on the interactive map. Firstly users need to select a source category to see their hourly production in the form of stacked are chart. After selecting a source from the navigation bar of energy chart, a button "Power plant locations" appears at the bottom of the chart. This button enables users to see the location of all power plants of the selected source. For example, a energy chart user is watching the electricity production of all gas power plant unit. Now the user is interested to see the locations of those power plants inside Germany. The locations of all gas power plant is shown on the map by clicking on "Power plant locations" (see Figure \ref{fig:interlink}). The function of this button is dynamically updated when user changes the source category from the navigation bar. 
-
-\begin{figure}
+\begin{figure} [h]
 \centering
 \includegraphics[width=1\textwidth]{interlinkButton}
 \caption{Interlinking between energy charts and the map}
 \label{fig:interlink}
 \end{figure}
+
+\section{Interlinking the Energy Chart with the Map}
+
+In Section \ref{sssec:connectivity}, the connectivity from the map to the energy chart is introduced where users can move to energy chart from the map to see the hourly electricity production of power plants. Likewise, an additional feature is imposed to the energy charts to establish a connection from energy-charts to the map. 
+
+Energy chart users can locate the power plants on the interactive map. Firstly users need to select a source category to see their hourly production in the form of stacked are chart. After selecting a source from the navigation bar of energy chart, a button "Power plant locations" appears at the bottom of the chart. This button enables users to see the location of all power plants of the selected source. For example, a energy chart user is watching the electricity production of all gas power plant unit. Now the user is interested to see the locations of those power plants inside Germany. The locations of all gas power plant is shown on the map by clicking on "Power plant locations" (see Figure \ref{fig:interlink}). The function of this button is dynamically updated when user changes the source category from the navigation bar. 
 
 \section{Optimization of power line visualization}
 \label{sec:powerLine}

@@ -2,7 +2,7 @@
 \BOOKMARK [0][]{chapter.2}{2 Related Work and Foundation}{}% 2
 \BOOKMARK [1][-]{section.2.1}{2.1 Interactive Maps}{chapter.2}% 3
 \BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Visualization Techniques}{section.2.1}% 4
-\BOOKMARK [1][-]{section.2.2}{2.2 Time series visualization}{chapter.2}% 5
+\BOOKMARK [1][-]{section.2.2}{2.2 Time Series Visualization}{chapter.2}% 5
 \BOOKMARK [0][]{chapter.3}{3 Background of This Project}{}% 6
 \BOOKMARK [1][-]{section.3.1}{3.1 Concept}{chapter.3}% 7
 \BOOKMARK [1][-]{section.3.2}{3.2 Tools}{chapter.3}% 8
@@ -20,7 +20,7 @@
 \BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Control layer}{section.4.3}% 20
 \BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Map API}{section.4.3}% 21
 \BOOKMARK [3][-]{subsubsection.4.3.2.1}{4.3.2.1 Functionality}{subsection.4.3.2}% 22
-\BOOKMARK [3][-]{subsubsection.4.3.2.2}{4.3.2.2 Connectivity between map and energy-charts}{subsection.4.3.2}% 23
+\BOOKMARK [3][-]{subsubsection.4.3.2.2}{4.3.2.2 Connectivity between Map and Energy Charts}{subsection.4.3.2}% 23
 \BOOKMARK [2][-]{subsection.4.3.3}{4.3.3 Comparison List}{section.4.3}% 24
 \BOOKMARK [1][-]{section.4.4}{4.4 Data query process on energy charts}{chapter.4}% 25
 \BOOKMARK [1][-]{section.4.5}{4.5 Interlinking the Energy Chart with the Map}{chapter.4}% 26
@@ -29,14 +29,13 @@
 \BOOKMARK [2][-]{subsection.4.6.2}{4.6.2 The Length of Power line}{section.4.6}% 29
 \BOOKMARK [1][-]{section.4.7}{4.7 Summary and Discussion}{chapter.4}% 30
 \BOOKMARK [0][]{chapter.5}{5 Evaluation}{}% 31
-\BOOKMARK [1][-]{section.5.1}{5.1 Online survey setup}{chapter.5}% 32
-\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Question groups}{section.5.1}% 33
+\BOOKMARK [1][-]{section.5.1}{5.1 Online Survey Setup}{chapter.5}% 32
+\BOOKMARK [2][-]{subsection.5.1.1}{5.1.1 Question Groups}{section.5.1}% 33
 \BOOKMARK [1][-]{section.5.2}{5.2 Survey Results and Discussion}{chapter.5}% 34
-\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Summary of participants and their backgrounds}{section.5.2}% 35
+\BOOKMARK [2][-]{subsection.5.2.1}{5.2.1 Summary of Participants and Their Backgrounds}{section.5.2}% 35
 \BOOKMARK [2][-]{subsection.5.2.2}{5.2.2 Working with the Interactive Map}{section.5.2}% 36
 \BOOKMARK [1][-]{section.5.3}{5.3 User Feedback}{chapter.5}% 37
 \BOOKMARK [1][-]{section.5.4}{5.4 Summary}{chapter.5}% 38
 \BOOKMARK [0][]{chapter.6}{6 Discussion}{}% 39
 \BOOKMARK [0][]{chapter.7}{7 Conclusion and Future Work}{}% 40
-\BOOKMARK [0][]{appendix*.72}{Appendix}{}% 41
-\BOOKMARK [0][]{appendix*.73}{Bibliography}{}% 42
+\BOOKMARK [0][]{appendix*.72}{Bibliography}{}% 41
