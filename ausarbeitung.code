@@ -1,13 +1,13 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {Listing}{\numberline {3.1}{\ignorespaces An example of JSON-object for Brown Coal(lignite) power plant\relax }}{17}{Listing.caption.24}
-\contentsline {Listing}{\numberline {3.2}{\ignorespaces An example GeoJSON-object for 110kV power line inside Germany\relax }}{18}{Listing.caption.25}
+\contentsline {Listing}{\numberline {3.1}{\ignorespaces An example of JSON-object for Brown Coal(lignite) power plant.\relax }}{17}{Listing.caption.24}
+\contentsline {Listing}{\numberline {3.2}{\ignorespaces An example GeoJSON-object for 110kV power line inside Germany.\relax }}{18}{Listing.caption.25}
 \addvspace {10\p@ }
 \contentsline {Listing}{\numberline {4.1}{\ignorespaces URL variables are handled using JavaScript\relax }}{37}{Listing.caption.48}
-\contentsline {Listing}{\numberline {4.2}{\ignorespaces Example of hourly production JSON data object\relax }}{38}{Listing.caption.50}
+\contentsline {Listing}{\numberline {4.2}{\ignorespaces Example of hourly production JSON data object.\relax }}{38}{Listing.caption.50}
 \contentsline {Listing}{\numberline {4.3}{\ignorespaces pseudo code for checking unit ids}}{38}{Listing.caption.51}
-\contentsline {Listing}{\numberline {4.4}{\ignorespaces Power line filtering algorithm depending on the map bound\relax }}{42}{Listing.caption.55}
+\contentsline {Listing}{\numberline {4.4}{\ignorespaces Power line filtering algorithm depending on the map bound.\relax }}{42}{Listing.caption.55}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

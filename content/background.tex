@@ -18,7 +18,7 @@ Our online visualization tool is based on JavaScript. For visualizing geographic
 
 Leaflet is an open source JavaScript library for building interactive maps. It is relatively new as it was first released in 2011. It is popular for its flexibility and is used by renowned websites, like Pinterest, Flickr, The Washington Post and Foursquare. It has all features developers need to make an interactive map. It can handle various basic tasks, mouse interaction and different map layers can be used. It is easy to extend with a variety of plugins which are available on its web page and plenty of opportunities to extend the basic functionality. It works efficiently across all the browsers as well as mobile platforms.
 
-The map is rendered using tiled layers. Its basic display is implemented by one default base map. Its built in capabilities enables creating thematic map layers for JSON and GeoJSON data. It also has the ability to draw points, circles, polylines, polygons, custom markers and styling these features dynamically. Among these features, custom markers are used for locating power plants and polylines are used for rendering the power plants on the map. Leaflet also supports Web Map Service(WMS), Vector layers and Tile layers. Power lines on the map are rendered as vector layers in our framework. Additionally, different tile layers are available along with OpenStreetMap in our framework like street view, grayscale and, outdoor. Leaflet has a controller that allows the users to see different tile layers as a base layer of the map. It also provides the functionality to add pop-ups to the markers, overlay lines, and shapes. It is extremely lightweight and there are no dependencies for this open source library. 
+The map is rendered using tiled layers. Its basic display is implemented by one default base map. Its built in capabilities enables creating thematic map layers for JSON and GeoJSON data. It also has the ability to draw points, circles, polylines, polygons, custom markers and styling these features dynamically. Among these features, custom markers are used for locating power plants and polylines are used for rendering the power plants on the map. Leaflet also supports Web Map Service (WMS), Vector layers and Tile layers. Power lines on the map are rendered as vector layers in our framework. Additionally, different tile layers are available along with OpenStreetMap in our framework like street view, grayscale and, outdoor. Leaflet has a controller that allows the users to see different tile layers as a base layer of the map. It also provides the functionality to add pop-ups to the markers, overlay lines, and shapes. It is extremely lightweight and there are no dependencies for this open source library. 
 
 The purpose of using this library is because it is widely used and open source. It supports desktop as well as modern mobile devices. As a whole, it is smaller in size, and it takes advantage of the new features of JavaScript and HTML. It is very easy to use and its API is easy to understand for performing common mapping tasks like changing base map, zooming, and panning. Leaflet also provides a nice documentation which makes a low barrier to develop new applications.
 
@@ -29,8 +29,8 @@ The significant strength that made leaflet much more powerful is its ability to 
 
 Plugins for Leaflet framework:
 \begin{itemize}
-  \item \textbf{Leaflet Marker Cluster}
-  \item \textbf{Leaflet Label}
+  \item \textbf{Leaflet Marker Cluster}\footnote{Github Leaflet.markercluster Website, \url{https://github.com/Leaflet/Leaflet.markercluster} (last accessed on \today)}
+  \item \textbf{Leaflet Label}\footnote{Github Leaflet.markercluster Website, \url{https://github.com/Leaflet/Leaflet.label} (last accessed on {\today})}
 \end{itemize}
 External plugins:
 \begin{itemize}
@@ -42,7 +42,7 @@ External plugins:
 \section*{Leaflet Marker Cluster}
 \label{sec:clusterr}
 
-A very useful plugin for Leaflet is Leaflet.MarkerCluster. It helps to cluster a large number of markers on a map by providing an animated marker. Its clustering functionality for leaflet has a great impact on the performance of interactive map. It takes less processing time to load the data set and finally it help to make the map look cleaner. The plugin is available for download from the \textbf{Leaflet.markercluster}\footnote{Github Leaflet.markercluster Website, \url{https://github.com/Leaflet/Leaflet.markercluster} (last accessed on \today)} GitHub page. Its CDN link is also provided, which can be used right after the declaration of Leaflet files in the header of the HTML. By default the plugin is providing some nice functionality such as \textbf{showCoverageOnHover}: helps to show the boundary that is been covered by the marker, \textbf{zoomToBoundsOnClick}: when a cluster is clicked it zooms to its bounds.
+A very useful plugin for Leaflet is Leaflet.markercluster. It helps to cluster a large number of markers on a map by providing an animated marker. Its clustering functionality for leaflet has a great impact on the performance of interactive map. It takes less processing time to load the data set and finally it help to make the map look cleaner. The plugin is available for download from the \textbf{Leaflet.markercluster} GitHub page. Its CDN link is also provided, which can be used right after the declaration of Leaflet files in the header of the HTML. By default the plugin is providing some nice functionality such as \textbf{showCoverageOnHover}: helps to show the boundary that is been covered by the marker, \textbf{zoomToBoundsOnClick}: when a cluster is clicked it zooms to its bounds.
 
 \begin{figure}[H]
   \begin{center}
@@ -51,7 +51,7 @@ A very useful plugin for Leaflet is Leaflet.MarkerCluster. It helps to cluster a
 \subfloat[Marker Cluster layer on Germany\label{markercluster}]
   {\includegraphics[width=.45\linewidth]{marker_cluster}}
 \hfill
-\caption{Impact of using marker cluster plugin}
+\caption{Impact of using marker cluster plugin.}
 \end{center}
 \end{figure}
 
@@ -59,8 +59,7 @@ Figure \ref{marker} shows all the power plants with pinpoint marker inside Germa
 
 \section*{Leaflet Label}
 
-Leaflet label is a plugin for adding labels to markers \& different shapes such as paths, polygons, and circles on leaflet powered maps. \textbf{Leaflet.Label}\footnote{Github Leaflet.markercluster Website, \url{https://github.com/Leaflet/Leaflet.label/tree/0.2.1
-} (last accessed on {\today})} development versions are available on GitHub . There is a default style for the label as you can see in the Figure \ref{fig:spiderfies} that power plants are located in Nordrhein-Westfalen. When the user hovers the cursor on the displayed objects of the map, this label appears with the data underlying for that particular object.
+Leaflet label is a plugin for adding labels to markers \& different shapes such as paths, polygons, and circles on leaflet powered maps. \textbf{Leaflet.Label}  development versions are available on GitHub . There is a default style for the label as you can see in the Figure \ref{fig:spiderfies} that power plants are located in Nordrhein-Westfalen. When the user hovers the cursor on the displayed objects of the map, this label appears with the data underlying for that particular object.
 
 \begin{figure}[H]
   \begin{center}
@@ -70,7 +69,7 @@ Leaflet label is a plugin for adding labels to markers \& different shapes such 
 \subfloat[Label of a Gas Power Plant\label{popupgas}]
   {\includegraphics[width=.45\linewidth]{popupgas}}
 \hfill
-\caption{Impact of using marker cluster and Leaflet label plugin}
+\caption{Impact of using marker cluster and Leaflet label plugin.}
 \end{center}
 \end{figure}
 
@@ -86,7 +85,7 @@ Bootstrap buttons, check boxes and drop-down navigation menus styling provides a
 
 \section{Working Environments}
 
-Before developing the online visualization tool of German power plants the Fraunhofer Institute for Solar Energy Systems (ISE) was providing interactive charts on electricity production, electricity stock market prices and import/export of electricity at the website Energy Charts\footnote{Energy Chart official webpage, \url{http://www.energy-charts.de/} (last accessed on {\today})}. This whole framework is developed based on the libraries D3.js\footnote{d3.js official website, \url{https://d3js.org/} (last accessed on {\today})}  and NVD3.js footnote{NVD3.js official website, \url{http://nvd3.org/} (last accessed on {\today})} to interactively visualize the data in different chart types. Therefore, stacked area charts, multi bar charts, pie charts, chord diagrams as well as multi charts and discrete bar charts are used to present the data in a well understandable and user friendly way. The data that are presented in the charts are organized and stored in a structured way on the FTP server. The same web server is used for storing the data of power plants and power transmission lines as well as for storing the dependent libraries. The purpose of making these libraries available in the webserver is for fast loading times and maintain the compatibility of the tool.
+Before developing the online visualization tool of German power plants the Fraunhofer Institute for Solar Energy Systems ISE was providing interactive charts on electricity production, electricity stock market prices and import/export of electricity at the website Energy Charts\footnote{Energy Chart official webpage, \url{http://www.energy-charts.de/} (last accessed on {\today})}. This whole framework is developed based on the libraries D3.js\footnote{d3.js official website, \url{https://d3js.org/} (last accessed on {\today})}  and NVD3.js \footnote{NVD3.js official website, \url{http://nvd3.org/} (last accessed on {\today})} to interactively visualize the data in different chart types. Therefore, stacked area charts, multi bar charts, pie charts, chord diagrams as well as multi charts and discrete bar charts are used to present the data in a well understandable and user friendly way. The data that are presented in the charts are organized and stored in a structured way on the FTP server. The same web server is used for storing the data of power plants and power transmission lines as well as for storing the dependent libraries. The purpose of making these libraries available in the web server is for fast loading times and maintain the compatibility of the tool.
 
 %[language=json,firstnumber=1]
 \begin{Listing}
@@ -117,14 +116,14 @@ var Power_Plants = [
   {....}
 ]
 \end{lstlisting}
-\caption{An example of JSON-object for Brown Coal(lignite) power plant}
+\caption{An example of JSON-object for Brown Coal(lignite) power plant.}
 \label{lst:pp-json}
 \end{Listing}
 
 \section{File Format}
 \label{sec:fileFormat}
 
-All the data sources that have been used for power plant visualization and their production in the Energy Charts are in the JSON\footnote{JSON official website, \url{https://json.org/} (last accessed on {\today})}(JavaScript Object Notation) format. This is data format is language-independent and use the extension .json. The MasterData power file is received in CSV (Comma-separated values) format which is downloaded from the EEX\footnote{European Energy Exchange, \url{https://www.eex.com} (last accessed on {\today})} server. Fraunhofer ISE is authorized to download the files from the FTP server in CSV format and later it is converted into JSON data. List \ref{lst:pp-json} shows an example how power plant files are structured in JSON. 
+All the data sources that have been used for power plant visualization and their production in the Energy Charts are in the JSON\footnote{JSON official website, \url{http://json.org/} (last accessed on {\today})}(JavaScript Object Notation) format. This is data format is language-independent and use the extension .json. The MasterData power file is received in CSV (Comma-separated values) format which is downloaded from the EEX\footnote{European Energy Exchange, \url{https://www.eex.com} (last accessed on {\today})} server. Fraunhofer ISE is authorized to download the files from the FTP server in CSV format and later it is converted into JSON data. List \ref{lst:pp-json} shows an example how power plant files are structured in JSON. 
 
 %[language=json,firstnumber=1]
 \begin{Listing}
@@ -160,11 +159,11 @@ var _110KV_layer = [
     }
    ]
 \end{lstlisting}
-\caption{An example GeoJSON-object for 110kV power line inside Germany}
+\caption{An example GeoJSON-object for 110kV power line inside Germany.}
 \label{lst:pl-json}
 \end{Listing}
 
-Another format that has been used for rendering power lines is GeoJSON\footnote{GeoJSON official website, \url{https://geojson.org/} (last accessed on {\today})}. It is a popular data format among GIS (Geographic Information System) technology and services. Leaflet is very good at handling both JSON and GeoJSON file format. Power lines are created from GeoJSON objects. According to \cite{geojson16}, GeoJSON object is a format for encoding a variety of geographic data structures in the form of geometry and collection of features. GeoJSON supports points, LineString, Polygon, Multipoint, MultiLineString, Multipolygon. Features in GeoJSON contain a geometry object and additional properties and a feature collection represents a list of features. The feature showed in the list \ref{lst:pl-json} belongs to the 110kV layer. Its geometry type is LineString and coordinates are given inside the geometry object. At the time of rendering, Leaflet generates a vector data layer from GeoJSON feature and adds it to the map.
+Another format that has been used for rendering power lines is GeoJSON\footnote{GeoJSON official website, \url{http://geojson.org/} (last accessed on {\today})}. It is a popular data format among GIS (Geographic Information System) technology and services. Leaflet is very good at handling both JSON and GeoJSON file format. Power lines are created from GeoJSON objects. According to \cite{geojson16}, GeoJSON object is a format for encoding a variety of geographic data structures in the form of geometry and collection of features. GeoJSON supports points, LineString, Polygon, Multipoint, MultiLineString, Multipolygon. Features in GeoJSON contain a geometry object and additional properties and a feature collection represents a list of features. The feature showed in the list \ref{lst:pl-json} belongs to the 110kV layer. Its geometry type is LineString and coordinates are given inside the geometry object. At the time of rendering, Leaflet generates a vector data layer from GeoJSON feature and adds it to the map.
 
 \subsection{Advantage}
 
@@ -179,7 +178,7 @@ JSON is hard to read by a human and it is confusing. Its enormous number of brac
 \begin{figure} [H]
   \begin{center}
     \includegraphics[width=1\textwidth]{wizardfull}
-    \caption{Overpass turbo query wizard for generating query}
+    \caption{Overpass turbo query wizard for generating query.}
     \label{fig:wizard}
   \end{center}
 \end{figure}
@@ -193,7 +192,7 @@ Power transmission line data are extracted from the overpass-turbo\footnote{Over
 \begin{figure}
   \begin{center}
     \includegraphics[width=1\textwidth]{optg}
-    \caption[Overpass turbo API]{Overpass turbo API query (left) with rendered vector layer of 220kV power line (right) on the OpenStreetMap}
+    \caption[Overpass turbo API]{Overpass turbo API query (left) with rendered vector layer of 220kV power line (right) on the OpenStreetMap.}
     \label{fig:optg}
   \end{center}
 \end{figure} 

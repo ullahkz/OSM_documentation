@@ -3,7 +3,7 @@
 
 The online visualization application is implemented as an additional tool for accessing power plant data on Energy Charts. Energy Charts were implemented using JavaScript libraries. Therefore, same, or corresponding technologies were favored for our interactive visualization map. 
 
-The vision of this project is to provide an interactive map for users who are interested in Germany’s electricity production.  This visualization tool provides multiple possibilities to explore the Germany’s electricity generation and its distribution. First, users can get an overview of power plants. It shows the location, operating status, and generation capacity of all renewable and conventional power plants in Germany. Second, this interactive map is associated with ThemeRiver or stacked area charts where users can see an hourly production of electricity for each power plant. Finally, the tool also visualizes the power transmission lines (110kV, 220kV, and 380kV) of Germany. Furthermore, users can select multiple power plants and list them in a table chart for comparison. It is also possible to compare those selected units and based on their hourly production with Energy Charts. 
+The vision of this project is to provide an interactive map for users who are interested in Germany’s electricity production.  This visualization tool provides multiple possibilities to explore Germany’s electricity generation and its distribution. First, users can get an overview of power plants. It shows the location, operating status, and generation capacity of all renewable and conventional power plants in Germany. Second, this interactive map is associated with ThemeRiver or stacked area charts where users can see an hourly production of electricity for each power plant. Finally, the tool also visualizes the power transmission lines (110kV, 220kV, and 380kV) of Germany. Furthermore, users can select multiple power plants and list them in a table chart for comparison. It is also possible to compare those selected units based on their hourly production with Energy Charts. 
 
 \section{Requirement Analysis}
 \label{sec:reqAn}
@@ -53,7 +53,7 @@ There is an individual script that executes after page load for establishing the
 \begin{figure}
   \begin{center}
     \includegraphics[width=1\textwidth]{architectureNew}
-    \caption[The architecture of the visualization tool]{The architecture of the visualization tool - connection between back end and front end}
+    \caption[The architecture of the visualization tool]{The architecture of the visualization tool - connection between back-end and front-end.}
     \label{fig:architecture}
   \end{center}
 \end{figure} 
@@ -61,7 +61,7 @@ There is an individual script that executes after page load for establishing the
 \section{User Interface}
 \label{sec:ui}
 
-Based on the back-end the front-end is entirely developed in HTML, CSS, and JavaScript using the existing template for Energy Charts. Bootstrap design system was chosen for interface(e.g navigation menu, buttons and drop down) design and making the web page responsive. Furthermore, the user interface of interactive map is designed for desktop computers as well as smart mobile devices. In the following, the main structure of the graphical user interface containing the navigation menu, map API as well as the comparison chart will be presented. The main structure is shown in the Figure \ref{fig:structure}. As this interactive map is integrated into the Energy-Charts page, therefore the same template is used for the header section. Our graphical UI starts right after the navigation menu of the Energy-Charts page. Our interactive visualization tool starts with a navigation menu which can also be called as a control layer for the map. Check-boxes are used for the navigation menu area to externally control the map. They are decorated with unique colors. These colors are matched with the colors that have been assigned to each source category in the JSON file.  The map is located under the control layer where markers, power lines, and their basic information are displayed. An area for comparison list is allocated on the web page. Comparison table chart only appears when a user selects a power plant for comparison. Depending on the device, the appearance of the comparison list may change. Hence, our online interactive data mapping tool consists of three main parts: 
+Based on the back-end the front-end is entirely developed in HTML, CSS, and JavaScript using the existing template for Energy Charts. Bootstrap design system was chosen for interface (e.g navigation menu, buttons and drop down) design and making the web page responsive. Furthermore, the user interface of interactive map is designed for desktop computers as well as smart mobile devices. In the following, the main structure of the graphical user interface containing the navigation menu, map API as well as the comparison chart will be presented. The main structure is shown in the Figure \ref{fig:structure}. As this interactive map is integrated into the Energy-Charts page, therefore the same template is used for the header section. Our graphical UI starts right after the navigation menu of the Energy-Charts page. Our interactive visualization tool starts with a navigation menu which can also be called as a control layer for the map. Check-boxes are used for the navigation menu area to externally control the map. They are decorated with unique colors. These colors are matched with the colors that have been assigned to each source category in the JSON file.  The map is located under the control layer where markers, power lines, and their basic information are displayed. An area for comparison list is allocated on the web page. Comparison table chart only appears when a user selects a power plant for comparison. Depending on the device, the appearance of the comparison list may change. Hence, our online interactive data mapping tool consists of three main parts: 
 
 \begin{itemize}
 	\item{Control Layer: Navigation menu with two subsections}
@@ -72,7 +72,7 @@ Based on the back-end the front-end is entirely developed in HTML, CSS, and Java
 \begin{figure}
   \begin{center}
     \includegraphics[width=1\textwidth]{structure}
-    \caption{The main structure of the visualization page}
+    \caption{The main structure of the visualization page.}
     \label{fig:structure}
   \end{center}
 \end{figure}
@@ -82,7 +82,7 @@ In the following these parts are particularized in details.
 \subsection{Control layer}
 \label{sssec:controlLayer}
 
-Control layer provides the functionality to manage the displayed content on the map. Check-boxes are used to control the map using external JavaScript events. It is possible to design these boxes in different ways. This circular design is inspired by the legends of energy power chart. For this reason, we designed this external navigation menu for controlling the map. Control layer is divided into two sections (See Figure \ref{fig:menuu}).
+Control layer provides the functionality to manage the displayed content on the map. Check-boxes are used to control the map using external JavaScript events. It is possible to design these boxes in different ways. This circular design is inspired by the legends of energy power chart. For this reason, we designed this external navigation menu for controlling the map. Control layer is divided into two sections (see Figure \ref{fig:menuu}).
 
 \begin{figure} [H]
   \begin{center}
@@ -98,7 +98,7 @@ Check-boxes for selecting all power plants at once, and for high voltage power l
 \begin{figure} [H]
   \begin{center}
     \includegraphics[width=1\textwidth]{menu_tooltip}
-    \caption{Tool tip for Check-boxes}
+    \caption{Tool tip for Check-boxes.}
     \label{fig:menuTT}
   \end{center}
 \end{figure}
@@ -108,7 +108,7 @@ A drop-down selection menu is designed to locate and select 16 different states 
 
 \subsubsection*{Control Layer Properties}
 
-Control layer is an essential part of the interactive map. To perform an action, the user needs to select check-boxes. When the status of the check-box is not selected or unchecked, its appears as an empty white circle with a colored border. On selection, it is filled with its previously assigned border color (see Figure \ref{fig:menufilled}) and reveals the power plant on the map. For example, to show all power plant on the map the user must click on the check-box labeled with “All Power Plants”. This action triggers all 12 check-boxes of power plants and fills the circles with colors (see Figure \ref{fig:menu2}). While continuing this operation if any one of the power plants is unchecked or deselected, then “All Power Plants” is automatically deselected.  On the other hand, if all 12 check-boxes are selected manually, this action also selects the check-box of “All Power Plants”. Therefore, based on selection the content of the map will be updated. Same properties and behaviors are also applicable for individual high voltage power lines. To see the power lines on the map, the user must select the check-boxes assigned for each power line. 
+Control layer is an essential part of the interactive map. To perform an action, the user needs to select check-boxes. When the status of the check-box is not selected or unchecked, its appears as an empty white circle with a colored border. On selection, it is filled with its previously assigned border color (see Figure \ref{fig:menufilled}) and reveals the power plant on the map. For example, to show all power plant on the map the user must click on the check-box labeled with “All Power Plants". This action triggers all 12 check-boxes of power plants and fills the circles with colors (see Figure \ref{fig:menu2}). While continuing this operation if any one of the power plants is unchecked or deselected, then "All Power Plants" is automatically deselected.  On the other hand, if all 12 check-boxes are selected manually, this action also selects the check-box of "All Power Plants". Therefore, based on selection the content of the map will be updated. Same properties and behaviors are also applicable for individual high voltage power lines. To see the power lines on the map, the user must select the check-boxes assigned for each power line. 
 
 \begin{figure} [H]
   \begin{center}
@@ -126,12 +126,12 @@ Control layer is an essential part of the interactive map. To perform an action,
   \end{center}
 \end{figure}
 
-The drop-down selection mechanism for German states is also a part of the control layer. It was added to give users an opportunity to control the map and find different states inside Germany. Users can choose between 16 states from the menu for zooming in and to have the local view of that particular state. This animated zoom-in option uses a feature of Leaflet to get the bounds of the selected state data layer and fits on the map with the maximum possible zoom level. This will help the user to get an idea about the power plant density inside the selected state of Germany. The user needs to select “Deutschland” to restore the global view of the German map. Figure \ref{fig:stateSelection} shows an example of state selection mechanism. On the selection of Baden-Württemberg from the drop-down list, it is highlighted, and map zoomed in to fit it on the map screen.
+The drop-down selection mechanism for German states is also a part of the control layer. It was added to give users an opportunity to control the map and find different states inside Germany. Users can choose between 16 states from the menu for zooming in and to have the local view of that particular state. This animated zoom-in option uses a feature of Leaflet to get the bounds of the selected state data layer and fits on the map with the maximum possible zoom level. This will help the user to get an idea about the power plant density inside the selected state of Germany. The user needs to select "Deutschland" to restore the global view of the German map. Figure \ref{fig:stateSelection} shows an example of state selection mechanism. On the selection of Baden-Württemberg from the drop-down list, it is highlighted, and map zoomed in to fit it on the map screen.
 
 \begin{figure}
   \begin{center}
     \includegraphics[width=1\textwidth]{state_selection}
-    \caption[A German state (Baden-Württemberg) is highlighted]{A German state (Baden-Württemberg) is highlighted, when it is selected from the drop-down navigation menu}
+    \caption[A German state (Baden-Württemberg) is highlighted]{A German state (Baden-Württemberg) is highlighted, when it is selected from the drop-down navigation menu.}
     \label{fig:stateSelection}
   \end{center}
 \end{figure}
@@ -139,7 +139,7 @@ The drop-down selection mechanism for German states is also a part of the contro
 \begin{figure}
   \begin{center}
     \includegraphics[width=1\textwidth]{map_view}
-    \caption[Interactive map area]{Interactive map area equipped with legends on (top-left and bottom-left), initial cluster view, zooming and map scale control (bottom-right), different base map layer controller(top-right)}
+    \caption[Interactive map area]{Interactive map area equipped with legends on (top-left and bottom-left), initial cluster view, zooming and map scale control(bottom-right), different base map layer controller (top-right).}
     \label{fig:mapView}
   \end{center}
 \end{figure}
@@ -162,7 +162,7 @@ The interactive map appears under the navigation menu on the web page. Our initi
 
 In this section, the functional aspects of our visualization tool in the combination with our control layer are discussed.
 
-As discussed in Section \ref{sssec:mapArea}, by default a cluster view of all power plants are rendered on the map. This is added as a layer on the map. Cluster view interprets that there are no check-box selected or no action was performed externally on the map. From this position, users can zoom in by clicking the zoom-in button or even by scrolling the mouse. Markers smoothly split from the cluster on zoom-in and merge to its cluster on zoom-out. If any check-box is selected, this action will remove the cluster layer from the map. In the case of viewing all power plants on the map, the user needs to select “All Power Plant” and as a result, all the markers are visible on the map (see Figure \ref{fig:markerini}). For Each energy source category, a unique color and marker logo are assigned. At the time of reading the JSON data, markers are categorized and stored in groups. Each object of layer group is rendered on the map as a check-box input. For example,  to see all nuclear power plants, the user needs to select the check-box labeled “Uranium”. In that case, only the nuclear marker layer object is added to the map (See Figure \ref{fig:uranium}. Here, jQuery is used for targeting the html DOM (Data Object Model) input check-box object and leaflet functionality is used to add it to the map. 
+As discussed in Section \ref{sssec:mapArea}, by default a cluster view of all power plants are rendered on the map. This is added as a layer on the map. Cluster view interprets that there are no check-box selected or no action was performed externally on the map. From this position, users can zoom in by clicking the zoom-in button or even by scrolling the mouse. Markers smoothly split from the cluster on zoom-in and merge to its cluster on zoom-out. If any check-box is selected, this action will remove the cluster layer from the map. In the case of viewing all power plants on the map, the user needs to select "All Power Plant" and as a result, all the markers are visible on the map (see Figure \ref{fig:markerini}). For Each energy source category, a unique color and marker logo are assigned. At the time of reading the JSON data, markers are categorized and stored in groups. Each object of layer group is rendered on the map as a check-box input. For example,  to see all nuclear power plants, the user needs to select the check-box labeled "Uranium". In that case, only the nuclear marker layer object is added to the map (see Figure \ref{fig:uranium}. Here, jQuery is used for targeting the html DOM (Data Object Model) input check-box object and leaflet functionality is used to add it to the map. 
 
 \begin{figure}
   \begin{center}
@@ -194,19 +194,19 @@ In this section, the connectivity between interactive map and energy chart is di
 
 Our goal was to access and view the hourly electricity production data of each power plant from the interactive map. Therefore, an internal connection is established. Users can select power plants and send a query to the energy charts to see their production. If the data of that specific power plant unit is available on the server, then hourly production of that power plant will be illustrated on energy charts. Users are informed over a browser pop-up window on the energy chart page if there is not data available.
 
-The interactive map provides two possibilities to access power plant data on the energy charts. First approach, using the “Go to Energy-Charts” button, which acts as a link (see Figure \ref{fig:buttons}.  Users can send a query by clicking on the “Go to Energy-Charts” button to directly view the time line visualization of electricity production. Each of this button has a unique link for sending queries. These links are dynamically generated while inserting the basic information of power plants in the pop-up box. This link delivers information to the chart. These information are \textit{source} and \textit{ID}. Each power plant has a unique unit id and source category, which are provided inside the power plant JSON data as an object. The hourly production JSON data also have the same object for unit id but its source category is specified inside the file name. Therefore, the value of \textit{source} variable is required to query the desired file and the value of \textit{ID} is required to match the desired power plant data. Hence, only one power plant production data is visible on the hourly production chart and others visibility are hidden. Second approach is using the "Compare" button, which leads to the Comparison List. Comparison list and its application for accessing electricity production data is discussed in the Section \ref{sssec:comparisonList}.
+The interactive map provides two possibilities to access power plant data on the energy charts. First approach, using the "Go to Energy-Charts" button, which acts as a link (see Figure \ref{fig:buttons}.  Users can send a query by clicking on the "Go to Energy-Charts" button to directly view the time line visualization of electricity production. Each of this button has a unique link for sending queries. These links are dynamically generated while inserting the basic information of power plants in the pop-up box. This link delivers information to the chart. These information are \textit{source} and \textit{ID}. Each power plant has a unique unit id and source category, which are provided inside the power plant JSON data as an object. The hourly production JSON data also have the same object for unit id but its source category is specified inside the file name. Therefore, the value of \textit{source} variable is required to query the desired file and the value of \textit{ID} is required to match the desired power plant data. Hence, only one power plant production data is visible on the hourly production chart and others visibility are hidden. Second approach is using the "Compare" button, which leads to the Comparison List. Comparison list and its application for accessing electricity production data is discussed in the Section \ref{sssec:comparisonList}.
 
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{buton}
-\caption[Buttons inside pop-up box]{\textit{Go to energy charts} button - to see its electricity production on energy chart and \textit{Compare} button - to add this plant to the comparison list}
+\caption[Buttons inside pop-up box]{\textit{Go to energy charts} button - to see its electricity production on energy chart and \textit{Compare} button - to add this plant to the comparison list.}
 \label{fig:buttons}
 \end{figure}
 
 \subsection{Comparison List}
 \label{sssec:comparisonList}
 
-Our interactive map provides an additional feature, where users can compare multiple power plant, and in the end, users can view their hourly electricity generation on the chart. A click on the “Compare” button (see Figure \ref{fig:buttons}) generates a comparison list (see Figure \ref{fig:ctable}) on the interactive map page. The comparison list will appear next to the map (or below, for mobile devices). Users can dynamically add more power plants to the list. Newly added plants are listed as a new entry on the table. If a plant is added to the table then its “Compare” button is disabled and marked as “Selected”. This function prohibits adding the same element several times to the list. The hourly production data of the power plants in the comparison list can also be shown in the Energy Charts by clicking the “Compare on Energy Charts”. This describes the second of approach for accessing hourly electricity generation data. Like “Go to Energy-Charts” button, “Compare on Energy-Charts button also acts as a link. This new button also passes information upon clicking it. Unlike the first approach, this link passes the information from the comparison table. Therefore, more than one power plant data is visible on the charts. Figure \ref{fig:eccharts} shows the hourly production data for the wind-offshore power plants because only those three power plants are listed in the comparison table. This function runs when users click on the "Compare on Energy Charts" button. 
+Our interactive map provides an additional feature, where users can compare multiple power plant, and in the end, users can view their hourly electricity generation on the chart. A click on the "Compare" button (see Figure \ref{fig:buttons}) generates a comparison list (see Figure \ref{fig:ctable}) on the interactive map page. The comparison list will appear next to the map (or below, for mobile devices). Users can dynamically add more power plants to the list. Newly added plants are listed as a new entry on the table. If a plant is added to the table then its "Compare" button is disabled and marked as "Selected". This function prohibits adding the same element several times to the list. The hourly production data of the power plants in the comparison list can also be shown in the Energy Charts by clicking the "Compare on Energy Charts". This describes the second of approach for accessing hourly electricity generation data. Like "Go to Energy-Charts" button, "Compare on Energy-Charts button also acts as a link. This new button also passes information upon clicking it. Unlike the first approach, this link passes the information from the comparison table. Therefore, more than one power plant data is visible on the charts. Figure \ref{fig:eccharts} shows the hourly production data for the wind-offshore power plants because only those three power plants are listed in the comparison table. This function runs when users click on the "Compare on Energy Charts" button. 
 
 \begin{figure} [H]
 \centering
@@ -225,29 +225,29 @@ Our interactive map provides an additional feature, where users can compare mult
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{url}
-\caption{Hyperlink of "Go to Energy Charts"}
+\caption{Hyperlink of "Go to Energy Charts".}
 \label{fig:url}
 \end{figure}
 
-Only power plants from the same source category can be compared on the comparison list. Users can add as many power plants as needed in the comparison list from different source category but this approach disables the functionality to compare them on energy charts page. For example, if users are interested to view the electricity production of Nuclear(Uranium) power plants then users should include only Nuclear power plants to the comparison list and use the "Compare on Energy Charts" to see their production. Currently, the energy charts can only illustrate the hourly data for a single source category. There is a form, inside the gray area with some radio buttons, for controlling the chart and to see the electricity production on the chart for different sources (see Figure \ref{fig:eccharts}). Energy charts provides the unit wise electricity production data for Hydro, Nuclear, Brown Coal (lignite), Hard Coal, Gas, Pumped storage, Oil, Wind-offshore, and Wind-onshore power sources. At present there is no data available for Biomass, Seasonal storage, Garbage, and Others source category. Therefore, it is not possible to see their production and compare them on energy charts.   
+Only power plants from the same source category can be compared on the comparison list. Users can add as many power plants as needed in the comparison list from different source category but this approach disables the functionality to compare them on energy charts page. For example, if users are interested to view the electricity production of Nuclear (Uranium) power plants then users should include only Nuclear power plants to the comparison list and use the "Compare on Energy Charts" to see their production. Currently, the energy charts can only illustrate the hourly data for a single source category. There is a form, inside the gray area with some radio buttons, for controlling the chart and to see the electricity production on the chart for different sources (see Figure \ref{fig:eccharts}). Energy charts provides the unit wise electricity production data for Hydro, Nuclear, Brown Coal (lignite), Hard Coal, Gas, Pumped storage, Oil, Wind-offshore, and Wind-onshore power sources. At present there is no data available for Biomass, Seasonal storage, Garbage, and Others source category. Therefore, it is not possible to see their production and compare them on energy charts.   
 
 \section{Data query process on energy charts}
 \label{sec:algorithm}
 
 In the Section \ref{sssec:connectivity}, how the interactive map is connected to the energy charts is already discussed. The algorithm used for solving this functional requirement is separated from that discussion and described here in details. 
 
-As mentioned before there are two different ways to access and view the hourly electricity production data. The basic difference between these two approaches is not much. “Go to Energy Charts” button passes only two variables (\textit{source} and \textit{ID}) over URL and direct to energy chart page. Figure \ref{fig:url} shows how the underlying link of the button is updated dynamically. 
+As mentioned before there are two different ways to access and view the hourly electricity production data. The basic difference between these two approaches is not much. "Go to Energy Charts" button passes only two variables (\textit{source} and \textit{ID}) over URL and direct to energy chart page. Figure \ref{fig:url} shows how the underlying link of the button is updated dynamically. 
 
 The functionality of "Compare on Energy Charts" button is also discussed before in Section \ref{sssec:connectivity}. The functionality of this button is to pass one or more unit ids over the URL. When a user adds a new power plant to the comparison list, the unit id of that power plant is added inside the \textit{ID} variable. Consequently, the link of the "Compare on Energy Charts" button is updated in the background. Figure \ref{fig:stepsPP} shows different steps of adding more than one power plant in the comparison list and how the link is updated in every step. This approach starts when users want to compare one or more than one power plants. For example, a user wants to compare the capacity and hourly production of three Nuclear power plants. In Step 1, user opened a pop-up window of a Nuclear plant and added this to the comparison list by clicking on the "Compare" button. Step 2 and Step 3 can be done in the similar way. Therefore, two more power plants are added to the comparison table. Thus, in total three unit ids are added to the \textit{ID} and the redirect link for "Compare on Energy Charts" is updated as showed in the Figure \ref{fig:stepsPP}. 
 
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{multiplechart}
-\caption[Steps of adding power plants to the comparison list]{Step 1: a nuclear plant is added into the comparison list - unit id added to the link; Step 2: another nuclear plant is added - new unit id added; Step 3: The last one is added into the list - unit id added and link is updated}
+\caption[Steps of adding power plants to the comparison list]{Step 1: a nuclear plant is added into the comparison list - unit id added to the link; Step 2: another nuclear plant is added - new unit id added; Step 3: The last one is added into the list - unit id added and link is updated.}
 \label{fig:stepsPP}
 \end{figure}
 
-Electricity production data are all stored in JSON files. Charts always load the data dynamically and plot these files according to user selection. Every JSON file name is written in several parts. It has a unique source name, week and year. The week and year is manually set when the data for that particular week is available on the server. On having URL variables, energy chart uses these and creates the chart accordingly. URL variables are handled by JavaScript and stored it locally for further operation. “source” variable is used to select the radio button of that particular source category on the navigation menu and also to complete the filepath (see List \ref{lst:url-json}). Radio button initializes the filepath using the source name. List \ref{lst:url-json} shows an instance of the first step of handling URL variables. This operation is similar for both approaches. 
+Electricity production data are all stored in JSON files. Charts always load the data dynamically and plot these files according to user selection. Every JSON file name is written in several parts. It has a unique source name, week and year. The week and year is manually set when the data for that particular week is available on the server. On having URL variables, energy chart uses these and creates the chart accordingly. URL variables are handled by JavaScript and stored it locally for further operation. "source" variable is used to select the radio button of that particular source category on the navigation menu and also to complete the filepath (see List \ref{lst:url-json}). Radio button initializes the filepath using the source name. List \ref{lst:url-json} shows an instance of the first step of handling URL variables. This operation is similar for both approaches. 
 
 %[language=json,firstnumber=1]
 \begin{Listing}
@@ -272,7 +272,7 @@ if (_sourceName != undefined && _unitID != undefined) { // checks if source and 
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{ecselection}
-\caption{Selected power plant data from the comparison table of Figure \ref{fig:stepsPP}}
+\caption{Selected power plant data from the comparison table of Figure \ref{fig:stepsPP}.}
 \label{fig:ecselect}
 \end{figure}
 
@@ -305,7 +305,7 @@ In the next step, algorithm handles unit ids from the URL. "Go to Energy Charts"
 %\label{lst:createChart}
 %\end{Listing}
 
-NVD3\footnote{Official NVD3 Website, \url{https://nvd3.org/} (last accessed on \today)} JavaScript library has been used for creating chart on Energy-Charts page. It is a widely used charting library which is written in d3.js\footnote{Official D3 Website, \url{https://d3js.org/} (last accessed on \today)}. An instance of hourly production data file is shown in the List \ref{lst:dataFile}. This input JSON array has four attributes but only \textit{eexUnitID} is required to fulfill our requirements. The \textit{eexUnitID} of the hourly electricity production data and the unit id of the power plant location data (see Figure \ref{fig:stepsPP} are both the same ids. Our algorithm checks whether this eexUnitID exists inside the array of \textit{query list} or not. If exists then it is rendered on the chart. %List \ref{lst:algo} showing the JavaScript code for checking the URL parameter from the input data series.
+NVD3\footnote{Official NVD3 Website, \url{http://nvd3.org/} (last accessed on \today)} JavaScript library has been used for creating chart on Energy-Charts page. It is a widely used charting library which is written in d3.js\footnote{Official D3 Website, \url{https://d3js.org/} (last accessed on \today)}. An instance of hourly production data file is shown in the List \ref{lst:dataFile}. This input JSON array has four attributes but only \textit{eexUnitID} is required to fulfill our requirements. The \textit{eexUnitID} of the hourly electricity production data and the unit id of the power plant location data (see Figure \ref{fig:stepsPP} are both the same ids. Our algorithm checks whether this eexUnitID exists inside the array of \textit{query list} or not. If exists then it is rendered on the chart. %List \ref{lst:algo} showing the JavaScript code for checking the URL parameter from the input data series.
 
 %[language=JSON,firstnumber=1]
 \begin{Listing} [H]
@@ -320,7 +320,7 @@ var inputData = [
 ]
 
 \end{lstlisting}
-\caption{Example of hourly production JSON data object}
+\caption{Example of hourly production JSON data object.}
 \label{lst:dataFile}
 \end{Listing}
 
@@ -351,7 +351,7 @@ end IF
 
 ELSE Enable Series
 \end{lstlisting}
-\caption[pseudo code for checking unit ids]{JavaScript pseudo code for checking unit ids and enabling their visibility on the charts}
+\caption[pseudo code for checking unit ids]{JavaScript pseudo code for checking unit ids and enabling their visibility on the charts.}
 \label{lst:algo}
 \end{Listing}
 
@@ -360,7 +360,7 @@ This part of the code is the new contribution to the existing energy chart. Line
 \begin{figure} [h]
 \centering
 \includegraphics[width=1\textwidth]{interlinkButton}
-\caption{Interlinking between energy charts and the map}
+\caption{Interlinking between energy charts and the map.}
 \label{fig:interlink}
 \end{figure}
 
@@ -378,7 +378,7 @@ In addition to the visualization of power plant locations, showing the power tra
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{export}
-\caption{All possible data formats that can be extracted from the Overpass-turbo API}
+\caption{All possible data formats that can be extracted from the Overpass-turbo API.}
 \label{fig:export}
 \end{figure}
 
@@ -395,7 +395,7 @@ Leaflet provides extensive opportunities to control the map and provides current
 \subfloat[380kv power line through Berlin (zoom level 8, filtered by map bounds)\label{fig:mapBoundB}]
   {\includegraphics[width=.45\linewidth]{mapBound}}
 \hfill
-\caption{Filtering power lines depending on the map bounds}
+\caption{Filtering power lines depending on the map bounds.}
 \label{fig:mpbound}
 \end{center}
 \end{figure}
@@ -418,7 +418,7 @@ FUNCTION updateMap
 					RETURN layer
 			end IF
 \end{lstlisting}
-\caption{Power line filtering algorithm depending on the map bound}
+\caption{Power line filtering algorithm depending on the map bound.}
 \label{lst:plBound}
 \end{Listing}
 
@@ -435,7 +435,7 @@ This file has massive amount of entries for power lines and power stations. Poly
 \subfloat[100kV power line (zoom level 8, coordinate length > 20)\label{fig:pl8}]
   {\includegraphics[width=.45\linewidth]{plzoom8}}
 \hfill
-\caption{Filtering power lines by coordinate length}
+\caption{Filtering power lines by coordinate length.}
 \label{fig:plfilter}
 \end{center}
 \end{figure}
